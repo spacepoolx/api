@@ -16,3 +16,21 @@ influxdb:
   url: "http://influxdb:8086"
   token: "spacepoolx"
   org: "spacepoolx"
+
+fee:
+  pool: 0.01
+  mojos_per_cost: 5
+  address: xch1z6x9h4ym5s5hn3qwn7hytcuxnrwv935f30pgc2eqh27aund73nkshl6lnm
+  stay_discount: 0
+  stay_length: 365
+  size_discount:
+    200: 0.05
+    500: 0.1
+    1000: 0.15
+  max_discount: 0
+  payment: auto
+  #payment_absolute: 1
+  absorb: auto
+  #absorb_absolute: 1
+
+wallet: "xch16kkp7fgxnhq6k6gqkyjxlgutj2zf52y6cap74vt9p7cfx7lppvvs8wqrs8"

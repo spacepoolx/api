@@ -31,7 +31,7 @@ def get_pool_config():
     global _POOL_CONFIG
     if _POOL_CONFIG is not None:
         return _POOL_CONFIG
-    cfg_path = os.environ.get('POOL_CONFIG_PATH') or ''
+    cfg_path = os.environ.get('DJANGO_SETTINGS_FILE') or ''
     if not os.path.exists(cfg_path):
         raise ValueError('POOL_CONFIG_PATH does not exist.')
     with open(cfg_path, 'r') as f:
@@ -47,7 +47,7 @@ def get_pool_fees():
 
 def get_pool_target_address():
     cfg = get_pool_config()
-    return cfg['wallets'][0]['address']
+    return cfg['wallet']
 
 
 def get_influxdb_client():

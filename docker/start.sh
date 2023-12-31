@@ -1,9 +1,9 @@
 #!/bin/bash
 set -e
 
-export CHIA_ROOT=/data/chia/${CHIA_NETWORK:=mainnet}
-export POOL_CONFIG_PATH="/data/config.yaml"
-export POOL_LOG_DIR=${POOL_LOG_DIR:=/data/pool_log}
+#export CHIA_ROOT=/data/chia/${CHIA_NETWORK:=mainnet}
+export DJANGO_SETTINGS_FILE="/data/config.yaml"
+export POOL_LOG_DIR=${POOL_LOG_DIR:=/data/logs}
 
 cd /root/api
 ../venv/bin/python manage.py collectstatic --no-input
