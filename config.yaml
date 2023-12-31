@@ -1,5 +1,6 @@
 secret_key: django-insecure
 debug: True
+
 allowed_hosts:
   - localhost
   - spacepoolx.com
