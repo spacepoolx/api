@@ -1,4 +1,4 @@
-secret_key: django-insecure
+secret_key: "django-insecure"
 debug: True
 
 allowed_hosts:
