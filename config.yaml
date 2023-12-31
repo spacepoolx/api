@@ -1,0 +1,17 @@
+secret_key: django-insecure
+debug: True
+allowed_hosts:
+  - localhost
+  - spacepoolx.com
+
+database:
+  name: "spacepoolx"
+  user: "spacepoolx"
+  password: "spacepoolx"
+  host: "postgres"
+  port: 5432
+
+influxdb:
+  url: "http://influxdb:8086"
+  token: "spacepoolx"
+  org: "spacepoolx"
