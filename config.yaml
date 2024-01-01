@@ -1,9 +1,11 @@
 secret_key: "django-insecure"
 debug: True
+pool_url: https://asia-chia.spacepoolx.com
 
 allowed_hosts:
   - localhost
   - spacepoolx.com
+  - asia-chia.spacepoolx.com
 
 database:
   name: "spacepoolx"
